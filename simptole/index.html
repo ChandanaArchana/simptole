@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Page</title>
+  <style>
+    /* CSS for layout */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px; /* Adjust padding */
+      background-color: #f0f0f0;
+    }
+    .logo {
+      width: 80px; /* Adjust as needed */
+      border: 1px solid #333; /* Added border for better visibility */
+    }
+    nav {
+      text-align: center;
+      font-size: 14px; /* Adjust font size */
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+    }
+    .social-icons img {
+      width: 30px; /* Adjust as needed */
+      margin-right: 10px;
+    }
+    .content {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+    }
+    .button,
+    .learn-more {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .grid-container {
+      max-width: 1200px; /* Adjust max-width as needed */
+      margin: 0 auto; /* Center align the grid container */
+      padding: 50px 20px; /* Adjust padding */
+    }
+    .grid {
+      display: flex; /* Use flexbox for grid layout */
+      justify-content: space-between; /* Distribute items evenly */
+      gap: 20px; /* Adjust the gap between grid items */
+    }
+    .grid > div {
+      flex: 1; /* Each grid item takes equal space */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .grid img {
+      max-width: 100%; /* Ensure images don't exceed container width */
+      height: 300px; /* Set a fixed height for the images */
+      object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    }
+    .description {
+      text-align: center; /* Center align descriptions */
+      background-color: #f9f9f9; /* Added background color for better readability */
+      padding: 15px; /* Adjust padding */
+    }
+    /* Aligning descriptions */
+    .grid > div:nth-child(1) .description {
+      text-align: left;
+    }
+    .grid > div:nth-child(2) .description {
+      text-align: center;
+    }
+    .grid > div:nth-child(3) .description {
+      text-align: right;
+    }
+    .text-container {
+      background-color: #979393;
+      padding: 20px; /* Increase padding */
+      column-count: 3; /* Number of columns */
+      column-gap: 10px; /* Gap between columns */
+      font-size: 16px; /* Decrease text size */
+      line-height: 1.6; /* Adjust line height */
+      text-align:center; /* Justify text */
+    }
+    .text-container p {
+      margin: 0;
+    }
+    header {
+  background-color: #f0f0f0; /* Background color for the header */
+  padding: 5px 20px; /* Adjust padding */
+}
+
+.logo {
+  width: 60px; /* Adjust as needed */
+  border: 1px solid #333; /* Added border for better visibility */
+}
+
+.menu {
+  text-align: center;
+  font-size: 12px; /* Adjust font size */
+}
+
+.menu a {
+  margin: 0 5px; /* Adjust margin */
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons img {
+  width: 25px; /* Adjust as needed */
+  margin-right: 5px; /* Adjust margin */
+}
+ /* CSS for layout */
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px; /* Adjust padding */
+      background-color: #f0f0f0;
+    }
+    .logo {
+      width: 80px; /* Adjust as needed */
+      border: 1px solid #333; /* Added border for better visibility */
+    }
+    nav {
+      text-align: center;
+      font-size: 14px; /* Adjust font size */
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+    }
+    .social-icons img {
+      width: 30px; /* Adjust as needed */
+      margin-right: 10px;
+    }
+    .content {
+      text-align: center;
+      margin-top: 20px;
+      position: relative; /* Make container relatively positioned */
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+    }
+    .button {
+  background-color: rgb(67, 66, 66);
+  color: white;
+  padding: 1px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute; /* Set position to absolute */
+  top: 70%; /* Position the button at 50% from the top */
+  left: 20%; /* Position the button at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the button horizontally and vertically */
+}
+
+
+  </style>
+</head>
+<body>
+    <header>
+  <div class="container">
+    <div class="left">
+      <img src="logo.png" alt="Logo" class="logo" />
+    </div>
+    <nav class="menu">
+      <a href="#"><b>Home</b></a>
+      <a href="#"><b>Order Food</b></a>
+      <a href="#"><b>Restaurant</b></a>
+      <a href="#"><b>Testimonials</b></a>
+      <a href="#"><b>Contact</b></a>
+    </nav>
+    <div class="right">
+      <div class="social-icons">
+        <img src="th.jpg" alt="WhatsApp" />
+        <img src="face.jpg" alt="Facebook" />
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="container">
+    <div class="content">
+      <img src="heroimg.jpg" alt="Image" />
+      <a href="#" class="button"> Lorem Ipsum </a>
+      <div class="text-container">
+        <p>
+          Lorem Ipsum is simply dummy text of 
+          the printing and typesetting
+          industry. Lorem Ipsum has been
+          the industry's standard dummy text
+          ever since the 1500s.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <h1>Lorem Ipsum</h1>
+    <div class="grid">
+      <div>
+        <img src="rooms.jpg" alt="Image" />
+        <div class="description">
+          <h5>ROOMS</h5>
+          <p>
+            <b
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              obcaecati fugit adipisci</b
+            >
+          </p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div>
+        <img src="dining - Copy - Copy.jpg" alt="Image" />
+        <div class="description">
+          <h5>DINING</h5>
+          <p>
+            <b
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              obcaecati fugit adipisci</b
+            >
+          </p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+      <div>
+        <img src="pool.jpg" alt="Image" />
+        <div class="description">
+          <h5>POOLS</h5>
+          <p>
+            <b
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              obcaecati fugit adipisci</b
+            >
+          </p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
